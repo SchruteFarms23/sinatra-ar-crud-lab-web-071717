@@ -1,0 +1,7 @@
+<h1> Index Page. Welcome! </h1>
+
+<ul>
+ <% @posts.each do |p| %>
+   <li> Name: <%= p.name %>. Content: <%= p.content %>. </li>
+ <% end %>
+ </ul>

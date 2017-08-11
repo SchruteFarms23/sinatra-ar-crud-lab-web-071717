@@ -1,0 +1,9 @@
+
+
+
+<form method ="post" action="/posts/<%=@post.id%>">
+ <input id="hidden" type="hidden" name="_method" value="patch">
+ <p>Enter the Updated Post Name:  <input placeholder="<%=@post.name%>" type="text" name="name"></p>
+ <p>Enter the Updated Posts Content:  <input placeholder="<%=@post.content%>" type="text" name="content"></p>
+ <input id="submit" type="submit">
+ </form>
